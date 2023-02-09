@@ -1,1 +1,6 @@
-# delivery-task
+# Paydalaniw kerek:
+
+- React Router DOM
+- Context API
+- Reusable Components
+- Formik
