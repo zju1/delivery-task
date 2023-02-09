@@ -3,5 +3,5 @@ const { createContext } = require('react');
 export const AppContext = createContext();
 
 export function AppProvider({ children }) {
-  return <AppContext.Provider>{children}</AppContext.Provider>;
+  return <AppContext.Provider value={null}>{children}</AppContext.Provider>;
 }

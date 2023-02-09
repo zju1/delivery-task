@@ -1,0 +1,6 @@
+:root {
+  --main-color: #b1184e;
+  --secondary-color: #f8e7ee;
+  --border-radius-base: 12px;
+  --action-transform: translateY(2px);
+}

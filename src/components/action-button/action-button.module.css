@@ -1,0 +1,20 @@
+.button {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-base);
+  width: 44px;
+  height: 44px;
+}
+
+.button:hover {
+  filter: brightness(103%);
+}
+
+.button:active {
+  transform: var(--action-transform);
+  filter: brightness(97%);
+}
