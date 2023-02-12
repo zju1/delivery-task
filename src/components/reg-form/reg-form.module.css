@@ -1,0 +1,52 @@
+.name {
+  position: relative;
+}
+.nameInput {
+  width: 354px;
+  height: 50px;
+  margin-bottom: 10%;
+  border: none;
+  outline: none;
+  padding: 7px 15px 7px 40px;
+  border-radius: 37px;
+  font-size: 1.3rem;
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  color: #fff;
+}
+.name img {
+  position: absolute;
+  top: 13%;
+  left: 3.5%;
+}
+
+.password {
+  position: relative;
+}
+.password img {
+  position: absolute;
+  top: 14%;
+  left: 5%;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35%;
+}
+
+.loginBtn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 354px;
+  height: 50px;
+  border-radius: 37px !important;
+  border: none;
+  color: var(--main-color) !important;
+  background-color: var(--secondary-color) !important;
+}

@@ -1,0 +1,21 @@
+.button {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgba(244, 63, 94, 0.1);
+  border-radius: var(--border-radius-base);
+  width: 44px;
+  height: 44px;
+  filter: brightness(103%);
+}
+
+.button:hover {
+  filter: brightness(103%);
+}
+
+.button:active {
+  transform: var(--action-transform);
+  filter: brightness(97%);
+}

@@ -1,0 +1,15 @@
+.s {
+  padding: 12px 28px;
+  border-radius: 37px;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  outline: none;
+  width: 280px;
+  height: 45px;
+  font-size: 1.1rem;
+}
+
+.s::placeholder {
+  color: #000;
+  font-size: 1rem;
+}

@@ -1,0 +1,85 @@
+.contact {
+  min-height: 100vh;
+  background-color: var(--secondary-color);
+}
+.title {
+  background-color: var(--main-color);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 123px;
+}
+.title button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+}
+.title h2 {
+  font-size: 32px;
+  color: #fff;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  font-size: 1.1rem;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #b5b5b5;
+  border-radius: 9px;
+  margin: 5% 0;
+}
+
+.form ::placeholder {
+  font-size: 1.1rem;
+  color: #000;
+}
+.select {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.select button {
+  width: 48%;
+  height: 45px;
+  color: #000;
+  font-size: 18px;
+  text-transform: none;
+  background: #ffffff;
+  border: 1px solid #ff1843;
+  border-radius: 4px;
+}
+.select button:nth-child(2) {
+  background: #ff1843;
+  border: 1px solid #fe5045;
+  white-space: nowrap;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+}
+.options {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #b5b5b5;
+  border-radius: 9px;
+  margin: 7% 0;
+}
+.sub{
+    padding: 15px;
+    background-color: #ff1843 !important;
+    border-radius: 7px;
+}

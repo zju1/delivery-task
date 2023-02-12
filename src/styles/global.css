@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#root > div{
+  background: linear-gradient(167.77deg, #FF1843 1.15%, #FF607D 100%);
+}
+
+a{text-decoration: none;}
+li{list-style: none;}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 7% 0;
+}

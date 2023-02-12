@@ -1,0 +1,95 @@
+.singleFood {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px 22px;
+  box-shadow: 0 0 50px rgba(90, 108, 234, 0.08);
+  border-radius: 16px;
+  margin: 8% 0;
+  position: relative;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  margin-right: 7%;
+}
+
+.foodInfo h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+.foodInfo p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #858c94;
+}
+.foodPrice span {
+  font-size: 30px;
+  font-weight: 600;
+  color: #f43f5e;
+}
+.pri {
+  display: block;
+  margin-top: 2%;
+  font-weight: 600;
+  font-size: 18px;
+  color: #f43f5e;
+}
+.res {
+  margin: 0 !important;
+}
+
+.counterBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 8.18px;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(315deg, #ff1843 -0.12%, #ff7e95 99.88%);
+  border-radius: 9.81818px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+}
+.minus {
+  background: rgba(244, 63, 94, 0.1);
+  color: var(--main-color);
+}
+
+.delete {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  width: 20px;
+  height: 20px;
+  gap: 8.18px;
+  background: rgba(244, 63, 94, 0.1);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 3%;
+  right: 1%;
+}
+.count{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.counter{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
