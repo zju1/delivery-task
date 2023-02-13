@@ -4,12 +4,16 @@ import { ActionButton } from '../../components';
 
 function Search() {
   return (
-    <>
-      <input className={styles.s} type="search" placeholder='Search' />
+    <div className={styles.searchContainer}>
+      <input
+        className={styles.s}
+        type="search"
+        placeholder="Search"
+      />
       <ActionButton>
         <FilterIcon />
       </ActionButton>
-    </>
+    </div>
   );
 }
 

@@ -1,16 +1,15 @@
 .contact {
-  min-height: 100vh;
   background-color: var(--secondary-color);
 }
 .title {
   background-color: var(--main-color);
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 0 0 20px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 123px;
+  padding: 5px 0;
 }
+
 .title button {
   border: none;
   outline: none;
@@ -28,42 +27,39 @@
 }
 
 .form input {
-  font-size: 1.1rem;
+  font: 500 14px 'Source Sans Pro' !important;
   outline: none;
   padding: 15px;
   width: 100%;
   background: #ffffff;
   border: 1px solid #b5b5b5;
   border-radius: 9px;
-  margin: 5% 0;
 }
 
-.form ::placeholder {
-  font-size: 1.1rem;
-  color: #000;
+.form input::placeholder {
+  font: 500 14px 'Source Sans Pro' !important;
+  color: #000000;
 }
 .select {
-  margin-top: 10%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .select button {
-  width: 48%;
-  height: 45px;
-  color: #000;
-  font-size: 18px;
-  text-transform: none;
+  font: 500 14px 'Source Sans Pro' !important;
+  padding: 15px;
+  width: 100%;
   background: #ffffff;
-  border: 1px solid #ff1843;
-  border-radius: 4px;
+  border: 1px solid #b5b5b5 !important;
+  color: #000000;
+  border-radius: 9px;
+  white-space: nowrap;
+  text-transform: none;
 }
 .select button:nth-child(2) {
   background: #ff1843;
-  border: 1px solid #fe5045;
-  white-space: nowrap;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 1rem;
+  border: 1px solid #fe5045 !important;
+  color: #ffffff;
 }
 .options {
   background: #ffffff;
@@ -75,11 +71,21 @@
   width: 100%;
   background: #ffffff;
   border: 1px solid #b5b5b5;
+  font: 500 14px 'Source Sans Pro' !important;
   border-radius: 9px;
-  margin: 7% 0;
 }
-.sub{
-    padding: 15px;
-    background-color: #ff1843 !important;
-    border-radius: 7px;
+.sub {
+  background-color: #ff1843 !important;
+  border-radius: 7px;
+  height: 55px;
+}
+
+.formContent {
+  display: grid;
+  gap: 30px;
+}
+
+.formElements {
+  display: grid;
+  gap: 16px;
 }

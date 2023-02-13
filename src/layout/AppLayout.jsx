@@ -1,10 +1,15 @@
 import { Outlet } from 'react-router-dom';
-import { BottomNavigation } from './BottomNavigation';
+import { Header } from '../components';
 
 export function AppLayout() {
   return (
-    <div>
-      <Outlet />
-    </div>
+    <>
+      <div
+        style={{ marginBottom: '100px', background: 'var(--secondary-color)' }}
+      >
+        <Outlet />
+        <Header />
+      </div>
+    </>
   );
 }

@@ -1,31 +1,55 @@
 import styles from './header.module.css';
-import {
-  AiFillHome,
-  AiFillShop,
-  AiOutlineNodeIndex,
-  AiOutlineUser
-} from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { CartIcon, ChatIcon, HomeIcon, ProfileIcon } from '../../assets/icons';
+
+const links = [
+  {
+    label: 'Home',
+    icon: HomeIcon,
+    to: '/'
+  },
+  {
+    label: 'Orders',
+    icon: CartIcon,
+    to: 'shop'
+  },
+  {
+    label: 'Address',
+    icon: ChatIcon,
+    to: 'navigate'
+  },
+  {
+    label: 'Profile',
+    icon: ProfileIcon,
+    to: 'contact'
+  }
+];
 
 function Header() {
   return (
-    <>
-      <nav className={styles.nav}>
-        <Link className={styles.home} to="/">
-          <AiFillHome />
-          <span>Home</span>
-        </Link>
-        <Link className={styles.a} to="/shop">
-          <AiFillShop />
-        </Link>
-        <Link className={styles.a} to="navigate">
-          <AiOutlineNodeIndex />
-        </Link>
-        <Link className={styles.a} to="contact">
-          <AiOutlineUser />
-        </Link>
-      </nav>
-    </>
+    <div className={styles.bottomNavigation}>
+      <div
+        className="container"
+        style={{ padding: 0 }}
+      >
+        <nav className={styles.nav}>
+          {links.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) =>
+                `${styles.link} ${isActive ? styles.active : ''}`
+              }
+            >
+              <span className={styles.linkIcon}>
+                <link.icon />
+              </span>
+              <span className={styles.linkLabel}> {link.label} </span>
+            </NavLink>
+          ))}
+        </nav>
+      </div>
+    </div>
   );
 }
 

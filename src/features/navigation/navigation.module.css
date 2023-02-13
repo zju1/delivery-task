@@ -4,33 +4,22 @@
   align-items: center;
 }
 .navigation {
-  min-height: 100vh;
   width: 100%;
-  background-color: #fff;
 }
-
-.maps {
-  margin-top: 5%;
+.navi h3 {
+  margin: 5% 0 2% 0;
+}
+.navi a {
+  display: block;
   width: 100%;
-  height: 543px;
-  padding: 20px;
-  overflow: hidden;
 }
-
-.navi h3{
-    margin: 5% 0 2% 0;
-}
-.navi a{
-    display: block;
-    width: 100%;
-}
-.navi .home{
-    width: 100%;
-    background-color: var(--main-color);
+.navi .home {
+  width: 100%;
+  background-color: var(--main-color);
 }
 
 .driver {
-    margin-bottom: 3%;
+  margin-bottom: 3%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,8 +63,17 @@
   padding: 11.406px;
   gap: 11.41px;
 
-  /* Primary/Primary 10% */
-
   background: rgba(244, 63, 94, 0.1);
   border-radius: 104.555px;
+}
+
+.appMap {
+  height: 60vh;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.appMap > div {
+  height: 100%;
+  width: 100%;
 }

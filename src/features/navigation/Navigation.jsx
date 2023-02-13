@@ -1,11 +1,10 @@
 import styles from './navigation.module.css';
 import Search from '../../components/search/Search';
-import Maps from './../../assets/images/Maps.png';
 import Driver from './../../assets/images/driver.png';
 import { AiOutlinePhone, AiOutlineMessage } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
-import GetMap from './MAP'
+import GetMap from './MAP';
 
 function Navigation() {
   return (
@@ -15,9 +14,7 @@ function Navigation() {
           <div className={styles.search}>
             <Search />
           </div>
-          <div className={styles.maps}>
-            <GetMap />
-          </div>
+          <GetMap />
           <h3>Track orders</h3>
           <div className={styles.driver}>
             <img
@@ -37,8 +34,13 @@ function Navigation() {
               </span>
             </div>
           </div>
-          <Link to='/'>
-            <Button className={styles.home} variant='contained'>Home</Button>
+          <Link to="/">
+            <Button
+              className={styles.home}
+              variant="contained"
+            >
+              Home
+            </Button>
           </Link>
         </div>
       </div>
